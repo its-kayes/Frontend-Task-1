@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from './Banner';
 import Everyone from './Everyone';
 import NastedHome from './Nasted/NastedHome';
+import Title from './Title';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner> </Banner>
             <Everyone> </Everyone>
             <NastedHome> </NastedHome>
+            <Title> </Title>
         </div>
     );
 };
