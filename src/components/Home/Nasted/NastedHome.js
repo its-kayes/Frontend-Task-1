@@ -8,9 +8,9 @@ const NastedHome = () => {
             
             <div className=' py-20 flex justify-evenly'>
                 <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='pop' >POP-UNDER</Link> </p>
-                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='pop' >POP-UNDER</Link> </p>
-                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='pop' >POP-UNDER</Link> </p>
-                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='pop' >POP-UNDER</Link> </p>
+                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='banner' >BANNER AD</Link> </p>
+                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='native' >NATIVE</Link> </p>
+                <p> <Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='skim' >SKIM</Link> </p>
             </div>
 
             <Outlet> </Outlet>

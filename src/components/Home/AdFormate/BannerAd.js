@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PopUnder = () => {
+const BannerAd = () => {
     return (
         <>
             {/* <div class="hero min-h-screen bg-base-100">
@@ -16,16 +16,15 @@ const PopUnder = () => {
 
             <div className='flex justify-evenly'>
                 <div>
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                    <img src="https://st2.depositphotos.com/3591429/6011/i/450/depositphotos_60118273-stock-photo-man-doing-online-marketing-ecommerce.jpg" class="max-w-sm rounded-lg shadow-2xl" />
                 </div>
 
                 <div>
                     <div>
-                        <h1 class="text-5xl text-secondary"> POP - UNDER </h1>
-                        <p class="py-6">This is one of the most popular ads. After user’s click, this
-                            ad opens landing page in behind. So, the user experience is
-                            not hampered much.
-                            </p>
+                        <h1 class="text-5xl text-secondary"> BANNER AD </h1>
+                        <p class="py-6">Choose between the available banner formats. Highly
+                            effective ad for visibility.
+                        </p>
                         <button class="text-lg text-primary">Learn More..</button>
                     </div>
                 </div>
@@ -34,4 +33,4 @@ const PopUnder = () => {
     );
 };
 
-export default PopUnder;
+export default BannerAd;
