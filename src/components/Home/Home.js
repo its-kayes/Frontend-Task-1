@@ -1,4 +1,5 @@
 import React from 'react';
+import AdFormate from './AdFormate/AdFormate';
 import Banner from './Banner';
 import Everyone from './Everyone';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Banner> </Banner>
             <Everyone> </Everyone>
+            <AdFormate> </AdFormate>
         </div>
     );
 };
