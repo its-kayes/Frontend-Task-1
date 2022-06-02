@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import PopUnder from './PopUnder';
 
 const AdFormate = () => {
     return (
@@ -8,7 +9,6 @@ const AdFormate = () => {
 
             <div class="drawer">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <Outlet> </Outlet>
                 <div class="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
                     <div class="w-full navbar justify-evenly bg-base-100">
@@ -26,14 +26,13 @@ const AdFormate = () => {
                             </ul>
                         </div> */}
 
-                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100 ' to='sq' >POP-UNDER</Link></li>
-                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100 ' to='s' >BANNER AD</Link></li>
-                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100 ' to='sq' >NATIVE</Link></li>
-                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100 ' to='s' >SKIM</Link></li>
+                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='popunder' >POP-UNDER</Link></li>
+                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='s' >BANNER AD</Link></li>
+                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='sq' >NATIVE</Link></li>
+                        <li><Link className='bg-white rounded-3xl px-8 py-2 font-semibold shadow-lg shadow-white-500/100' to='s' >SKIM</Link></li>
 
-                        
                     </div>
-                    {/* <!-- Page content here --> */}
+
                     Content
                 </div>
                 <div class="drawer-side">
@@ -45,6 +44,42 @@ const AdFormate = () => {
 
                     </ul>
 
+                </div>
+                <Outlet> </Outlet>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="drawer drawer-mobile">
+                <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content ">
+                    {/* <!-- Page content here --> */}
+                    {/* <h1 className='text-5xl text-cyan-500 font-extrabold'> Dashboard </h1> */}
+                    <Outlet>  </Outlet>
+                    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer-2" class="drawer-overlay"></label>
+                    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                        {/* <!-- Sidebar content here --> */}
+                        <li><Link to='/dashboard'>My Profile</Link></li>
+                        <li> <Link to='users'> All Users </Link> </li>
+                        <li><Link to='addproduct'> Add Product </Link></li>
+                        <li><Link to='allorders'> Manage Orders </Link></li>
+                        <li><Link to='products'> Manage Products </Link></li>
+
+
+
+                        <li><Link to='orders'>My Orders</Link></li>
+                        <li><Link to='reviews'>Add A Review</Link></li>
+
+                    </ul>
                 </div>
             </div>
 
